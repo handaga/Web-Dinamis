@@ -15,7 +15,7 @@ Tugas : 30% (bisa terdiri dari beberapa tugas)
 2. [web tutorials - W3School](http://www.w3schools.com/)
 3. [web tutorials - Tutorialspoint](http://www.tutorialspoint.com/) 
 
-## Panduan menggunakan GIT Software untuk mengelola project secara local 
+## Panduan menggunakan GIT Software untuk mengelola project dari GITHUB.COM secara local 
 
 ### Isntalasi GIT
 1. Download software [GIT](https://git-scm.com/download/win), hanya untuk pengguna WINDOWS & MAC, untuk LINUX sudah ada dalam sistem
