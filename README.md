@@ -14,3 +14,27 @@ Tugas : 30% (bisa terdiri dari beberapa tugas)
 1. Robin Nixon, Learning PHP, MySQL, JavaScript,CSS & HTML5: Fourth Edition,  O'Reilly, USA, 2014, [ebooks](http://it-ebooks.info/book/4681/)
 2. [web tutorials - W3School](http://www.w3schools.com/)
 3. [web tutorials - Tutorialspoint](http://www.tutorialspoint.com/) 
+
+## Panduan menggunakan GIT Software untuk mengelola project secara local 
+
+### Isntalasi GIT
+1. Download software [GIT](https://git-scm.com/download/win), hanya untuk pengguna WINDOWS & MAC, untuk LINUX sudah ada dalam sistem
+2. Install git software (Git Bash dan Git GUI)
+3. Jalankan 'Git Bash'
+
+### Menyalin folder/repository dari GITHUB.COM
+1. Buat direktori/folder kerja (`$mkdir mywork`)
+2. Buka folder kerja (`$cd mywork`)
+3. Menyalin/COPY project dari GITHUB.COM (`$git clone http://github.com/[NIM]/[nama repository]`)
+4. Masuk ke dalam folder/repository baru (`$cd [nama repository]`)
+
+### Mengupload folder/file kerja ke github.com
+1. Buat folder/file baru dalam direktori kerja (`$mkdir folder-baru`), selanjutnya bisa ditambahkan semua file kerja dalam folder baru tersebut.
+2. Menambahkan folder baru ke dalam project (`$git add folder-baru`)
+3. Melakukan COMMIT (`$git commit -m "catatan"`)
+4. Mengupload ke GITHUB.COM  (`$git push origin master`)
+5. Masukan USERNAME dan PASSWORD
+
+
+
+
