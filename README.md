@@ -17,7 +17,7 @@ Tugas : 30% (bisa terdiri dari beberapa tugas)
 
 ## Panduan menggunakan GIT Software untuk mengelola project dari GITHUB.COM secara local 
 
-### Isntalasi GIT
+### Instalasi GIT SOFTWARE (windows)
 1. Download software [GIT](https://git-scm.com/download/win), hanya untuk pengguna WINDOWS & MAC, untuk LINUX sudah ada dalam sistem
 2. Install git software (Git Bash dan Git GUI)
 3. Jalankan 'Git Bash'
