@@ -133,6 +133,46 @@ Resource digunakan untuk menyimpan referensi dari sebuah fungsi atau sumber daya
             echo "Connected successfully";
         ?> 
 
+# Statement ` echo ` dan ` print `
+
+Terdapat dua cara untuk menampilkan data, yaitu ` echo ` dan ` print `.  Pada dasarnya memiliki fungsi yang hampir sama, perbedaan terletak pada ` return value `. ` echo ` tidak memiliki ` return ` sedangkat ` print ` memiliki ` return value ` sama dengan ` 1 `.  Contoh menampilkan teks dan variabel dengan menggunakan ` echo ` dan ` print `.
+
+                <?php
+                        echo "<h2>PHP is Fun!</h2>";
+                        echo "Hello world!<br>";
+                        echo "I'm about to learn PHP!<br>";
+                        echo "This ", "string ", "was ", "made ", "with multiple parameters.";
+                ?> 
+                
+                <?php
+                        $txt1 = "Learn PHP";
+                        $txt2 = "W3Schools.com";
+                        $x = 5;
+                        $y = 4;
+                        
+                        echo "<h2>$txt1</h2>";
+                        echo "Study PHP at $txt2<br>";
+                        echo $x + $y;
+                ?> 
+                
+                <?php
+                        print "<h2>PHP is Fun!</h2>";
+                        print "Hello world!<br>";
+                        print "I'm about to learn PHP!";
+                ?> 
+                
+                
+                <?php
+                        $txt1 = "Learn PHP";
+                        $txt2 = "W3Schools.com";
+                        $x = 5;
+                        $y = 4;
+                        
+                        print "<h2>$txt1</h2>";
+                        print "Study PHP at $txt2<br>";
+                        print $x + $y;
+                ?> 
+
 # Membuat variabel
 
 In PHP, a variable starts with the $ sign, followed by the name of the variable:
