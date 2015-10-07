@@ -46,3 +46,55 @@ Aturan untuk memberi nama variabel dalam PHP:
   * Nama hanya terdiri atas alpha-numeric dan under_score saja (` a-Z `, ` 0-9 `, and ` _ ` )
   * Nama variabel bersifat ` case-sensitive `
 
+## variabel Output
+
+statement ` echo ` sering digunakan untuk menampilkan data di layar (halaman web), berikut ini adalah contoh menampilkan teks dan variabel di layar:
+
+        <?php
+            $txt = "W3Schools.com";
+            echo "I love $txt!";
+        ?> 
+
+Output yang sama dapat di hasilkan dari program berikut ini: 
+
+        <?php
+            $txt = "W3Schools.com";
+            echo "I love " . $txt . "!";
+        ?> 
+
+Contoh berikut ini akan menampilkan hasil penjumlahan dari dua buah variabel
+
+        <?php
+            $x = 5;
+            $y = 4;
+            echo $x + $y;
+        ?>
+
+## variabel dalam PHP dapat digunakan untuk menyimpan tipe data apa saja
+
+Pada contoh di atas, tidak ada perintah yang mengatakan pada PHP terkait tipe data tertentu untuk variabel, PHP secara automatis mengubah tipe data variabel, sesuai dengan nilai data yang diberikan. 
+
+## SCOPE variabel
+
+Dalam PHP variabel dapat dideklarasikan di mana saja, terdapat 3 scope variabel yaitu 
+
+* lokal
+* GLobal
+* Statik
+
+Sebuah variabel yang dideklarasikan di luar sebuah fungsi memiliki scope ` global ` dan hanya dapat di akses dari luar fungsi, contoh variabel ` x ` pada program berikut ini: 
+
+        <?php
+            $x = 5; // global scope
+            
+            function myTest() {
+                // memanggil variabel $x dalam blok fungsi ini akan menyebabkan error 
+                echo "<p>Variable x inside function is: $x</p>";
+            }
+            myTest();
+            
+            echo "<p>Variable x outside function is: $x</p>";
+        ?> 
+
+
+
