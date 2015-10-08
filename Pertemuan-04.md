@@ -189,7 +189,7 @@ Jika fungsi dipanggil tanpa memberikan nilai pada argumen, maka fungsi akan meng
 
 ## Nilai Kembalian (` return value `) dari sebuah fungsi
 
-Sebuah dapat memiliki nilai kembalian (` return value `) seperti pada contoh berikut :
+Sebuah fungsi dapat memiliki nilai kembalian (` return value `) seperti pada contoh berikut :
 
 		<?php
 			function sum($x, $y) {
@@ -201,6 +201,267 @@ Sebuah dapat memiliki nilai kembalian (` return value `) seperti pada contoh ber
 			echo "7 + 13 = " . sum(7, 13) . "<br>";
 			echo "2 + 4 = " . sum(2, 4);
 		?>
+
+# Array 
+
+Array dapat digunakan untuk menyimpan beberapa nilai dalam satu variabel, seperti dalam contoh berikut ini:
+
+		<?php
+			$cars = array("Volvo", "BMW", "Toyota");
+			echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+		?> 
+
+Terdapat tiga jenis array dalam PHP, yaitu:
+
+* `Indexed arrays` - array dengan nomor index
+* `Associative arrays` - array dengan `key` atau `index` berupa `nama`
+* `Multidimensional arrays` - array yang mengandung satu array atau lebih 
+
+## Indexed arrays
+
+Terdapat dua cara untuk membuat array tipe `Indexed arrays` seperti pada contoh berikut:
+
+		$cars = array("Volvo", "BMW", "Toyota");
+		
+atau
+
+		$cars[0] = "Volvo";
+		$cars[1] = "BMW";
+		$cars[2] = "Toyota"; 
+
+Jumlah elemen dalam array dapat dihitung dengan bantuan sebuah fungsi ` count($cars) `
+
+		<?php
+			$cars = array("Volvo", "BMW", "Toyota");
+			echo count($cars);
+		?> 
+
+Pengulangan untuk membaca elemen dalam `Indexed arrays` 
+
+		<?php
+			$cars = array("Volvo", "BMW", "Toyota");
+			$arrlength = count($cars);
+			
+			for($x = 0; $x < $arrlength; $x++) {
+			    echo $cars[$x];
+			    echo "<br>";
+			}
+		?> 
+
+## Associative Arrays
+
+Adalah array yang menggunakan  `key` berupa sebuah nama sebagai index, seperti contoh dalam kode berikut ini:
+
+		$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+		
+atau 
+
+		$age['Peter'] = "35";
+		$age['Ben'] = "37";
+		$age['Joe'] = "43"; 
+
+contoh penggunaan array dalam program 
+
+		<?php
+			$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+			echo "Peter is " . $age['Peter'] . " years old.";
+		?> 
+
+Akses elemen dalam array menggunakan perintah pengulangan ` foreach `
+
+		<?php
+			$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+			
+			foreach($age as $x => $x_value) {
+			    echo "Key=" . $x . ", Value=" . $x_value;
+			    echo "<br>";
+			}
+		?> 
+
+ELemen dalam array dapat diurut dengan menggunakan beberapa fungsi pengurut data sebagai berikut:
+
+* `sort()` - sort arrays in ascending order
+* `rsort()` - sort arrays in descending order
+* `asort()` - sort associative arrays in ascending order, according to the value
+* `ksort()` - sort associative arrays in ascending order, according to the key
+* `arsort()` - sort associative arrays in descending order, according to the value
+* `krsort()` - sort associative arrays in descending order, according to the key
+
+Contoh:
+
+		<?php
+		$cars = array("Volvo", "BMW", "Toyota");
+		sort($cars);
+		?> 
+		
+		<?php
+		$numbers = array(4, 6, 2, 22, 11);
+		sort($numbers);
+		?>
+		
+		<?php
+		$cars = array("Volvo", "BMW", "Toyota");
+		rsort($cars);
+		?> 
+		
+		<?php
+		$numbers = array(4, 6, 2, 22, 11);
+		rsort($numbers);
+		?> 
+		
+		
+		<?php
+		$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+		asort($age);
+		?> 
+		
+		<?php
+		$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+		ksort($age);
+		?> 
+		
+		<?php
+		$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+		arsort($age);
+		?> 
+		
+		<?php
+		$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+		krsort($age);
+		?> 
+
+Daftar fungsi yang terkait dengan array dapat dilihat di sini [Kumpulan fungsi PHP untuk pengolahan array](http://www.w3schools.com/php/php_ref_array.asp)
+
+
+# Built-in Global variabel dalam PHP - SUPERGLOBALS
+
+superglobals selalau dapat diakses dari bagian manapun dalam progra, berikut adalah daftar nama variabel superglobal 
+
+		$GLOBALS
+		$_SERVER
+		$_REQUEST
+		$_POST
+		$_GET
+		$_FILES
+		$_ENV
+		$_COOKIE
+		$_SESSION
+
+Contoh penggunaan dalam program 
+## $GLOBALS
+
+Variabel ` $GLOBALS ` adalah variabel superglobal yang dapat digunakan untuk mengakses semua variabel global dalam kode PHP (termasuk akses/membaca dari dalam sebuah fungsi).  PHP menyimpan semua variabel global dalam bentuk ` array ` dengan nama ` $GLOBALS[index] ` dimana  ` index ` berupa nama variabel yang akan diakses secara global, contoh:
+
+		<?php
+			$x = 75;
+			$y = 25;
+			 
+			function addition() {
+			    $GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y'];
+			}
+			 
+			addition();
+			echo $z;
+		?> 
+
+## Variabel $_SERVER 
+
+` $_SERVER ` adalah sebuah variabel superglobal yang digunakan oleh PHP untuk menyimpan beberapa data/informasi seperti ` header `, ` path `, dan ` lokasi script `.  Berikut ini contoh sebagian informasi yang dapat diakses dari variabel global ` $_SERVER `. Daftar informasi selengkapnya dapat di lihat di sini [Daftar informasi dalam $_SERVER['x'] selengkapnya](http://php.net/manual/en/reserved.variables.server.php)
+
+		<?php
+			echo $_SERVER['PHP_SELF']; echo "<br>";
+			echo $_SERVER['SERVER_NAME']; echo "<br>";
+			echo $_SERVER['HTTP_HOST']; echo "<br>";
+			echo $_SERVER['HTTP_REFERER']; echo "<br>";
+			echo $_SERVER['HTTP_USER_AGENT']; echo "<br>";
+			echo $_SERVER['SCRIPT_NAME'];
+		?> 
+		
+## Variabel global ` $_REQUEST ` 
+
+` $_REQUEST ` digunakan untuk membaca data yang dikirim melalui FORM HTML SUBMIT, mengunakan sembarang jenis `form method` (POST, GET, PUT, DELETE), contoh : 
+
+		<html>
+		<body>
+		
+		<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+		  Name: <input type="text" name="fname">
+		  <input type="submit">
+		</form>
+		
+		<?php
+		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		    // collect value of input field
+		    $name = $_REQUEST['fname'];
+		    if (empty($name)) {
+		        echo "Name is empty";
+		    } else {
+		        echo $name;
+		    }
+		}
+		?>
+		
+		</body>
+		</html>	
+
+## Variabel $_POST'
+
+`$_POST` digunakan untuk membaca data yang dikirim melalui FORM HTML SUBMIT, tetapi khusus yang menggunakan method `POST`, contoh:
+
+		<html>
+		<body>
+		
+		<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+		  Name: <input type="text" name="fname">
+		  <input type="submit">
+		</form>
+		
+		<?php
+		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		    // collect value of input field
+		    $name = $_POST['fname'];
+		    if (empty($name)) {
+		        echo "Name is empty";
+		    } else {
+		        echo $name;
+		    }
+		}
+		?>
+		
+		</body>
+		</html>
+
+## Variabel ` $_GET `
+
+`$_GET` digunakan untuk membaca data yang dikirim melalui FORM HTML SUBMIT, tetapi khusus yang menggunakan method `GET`. Selain itu ` $_GET ` juga dapat digunakan untuk membaca data yang dikirim menggunakan `URL`,  contoh:
+
+		<html>
+		<body>
+		
+		<a href="test_get.php?subject=PHP&web=W3schools.com">Test $GET</a>
+		
+		</body>
+		</html> 
+
+Isi file `test_get.php` adalah sebagai berikut:
+
+		<html>
+		<body>
+		
+		<?php
+		echo "Study " . $_GET['subject'] . " at " . $_GET['web'];
+		?>
+		
+		</body>
+		</html>
+
+
+
+
+
+
+
+
 
 
 
