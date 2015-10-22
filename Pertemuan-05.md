@@ -50,7 +50,7 @@ dengan menggunakan php, contoh kode untuk membaca tabel adalah sebagai berikut:
 
 selanjutnya untuk membaca baris-baris data dalam tabel, dapat dilakukan dengan perintah ` mysqli_fetch_assoc() `, seperti pada contoh program php berikut:
 
-<?php 
+    <?php 
         $conn = mysqli_connect('localhost','root','','login');
         if ($conn) {
         
