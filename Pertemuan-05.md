@@ -69,3 +69,18 @@ selanjutnya untuk membaca baris-baris data dalam tabel, dapat dilakukan dengan p
         }
     ?>
 
+
+# Membuat halaman login 
+
+Hampir setiap halaman web memerlukan halaman untuk login, proses login adlah sebagai berikut:
+
+* user mmemasukan USERNAME & PASSWORD melalui form login (post submit) 
+* server menerima USERANME dan PASSWORD form kemudian membaca tabel users dalam database server dan membandingkan USERANME dan PASSWORD antara data yang di-submit oleh user dan data dalam database. 
+* Jika data sesusai/sama maka aplikasi web akan menampilkan halaman khusus yang hanya boleh dibuka oleh user yang sudah login.
+
+
+
+
+
+
+
