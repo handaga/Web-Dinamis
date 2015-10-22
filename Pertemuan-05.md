@@ -32,7 +32,7 @@ Setelah aplikasi server berjalan dengan baik, selanjutnya dapat dilakukan proses
 ![Gambar-5.3 Localhost]()
 > Gambar-5.3 Tampilan halaman web LOCALHOST
 
-2. Klik menu ` phpMyAdmin ` yang terdapat pada kolom sebelah kiri, jika secutiry belum diakifkan maka tidak akan muncul halaman login (username= 'root' tanpa password), jika muncul halaman login, masukan USERNAME Dan PASSWORD yang telah anda pasang untuk masuk kedalam database. Contoh tampilan awal aplikasi ` phpMyAdmin ` diberikan pada gambar berikut.
+* Klik menu ` phpMyAdmin ` yang terdapat pada kolom sebelah kiri, jika secutiry belum diakifkan maka tidak akan muncul halaman login (username= 'root' tanpa password), jika muncul halaman login, masukan USERNAME Dan PASSWORD yang telah anda pasang untuk masuk kedalam database. Contoh tampilan awal aplikasi ` phpMyAdmin ` diberikan pada gambar berikut.
 
 ![Gambar-5.4]()
 > Gambar-5.4 Halaman web aplikasi ` phpMyAdmin `
