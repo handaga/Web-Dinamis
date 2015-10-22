@@ -10,3 +10,8 @@ Langkah-langkah penting yang harus di lakukan adalah sebagai berikut:
 
 > Lihat file ` seting-server-database.md ` untuk mempersiapkan server basis data
 
+Dengan menggunakan petunjuk seting-server-basistada dalam file `seting-server-basisdata.md ` maka untuk membuat koneksi dengan server database dapat dilakukan dengan perintah seperti berikut:
+
+    <?php
+        $conn = mysqli_connect('localhost','root','','login');
+    ?>
