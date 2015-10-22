@@ -27,6 +27,12 @@ Sebagai server database dalam contoh ini akan digunakan MySQL dari paket XAMPP, 
 
 Setelah aplikasi server berjalan dengan baik, selanjutnya dapat dilakukan proses pembuatan database dengan menggunakan aplikasi web bernama ` phpMyAdmin `. Terdapat beberapa komponen dalam DATABASE, antara TABEL, STORE PROCEDURE, FUNCTION dan lain-lain, dalam contoh ini akan diberikan contoh membuat TABEL saja, dengan cara sebagai berikut:
 
-1. Jalankan aplikasi web browser, buka link  http://localhost, akan dtampilkan halaman web seperti pada gamabr di bawah ini.
+* Jalankan aplikasi web browser, buka link  ` http://localhost `, akan dtampilkan halaman web seperti pada gamabr di bawah ini.
+
+![Gambar-5.3 Localhost]()
+> Gambar-5.3 Tampilan halaman web LOCALHOST
+
 2. Klik menu ` phpMyAdmin ` yang terdapat pada kolom sebelah kiri, jika secutiry belum diakifkan maka tidak akan muncul halaman login (username= 'root' tanpa password), jika muncul halaman login, masukan USERNAME Dan PASSWORD yang telah anda pasang untuk masuk kedalam database. Contoh tampilan awal aplikasi ` phpMyAdmin ` diberikan pada gambar berikut.
-3. 
+
+![Gambar-5.4]()
+> Gambar-5.4 Halaman web aplikasi ` phpMyAdmin `
