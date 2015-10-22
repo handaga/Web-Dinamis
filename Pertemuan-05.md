@@ -36,3 +36,26 @@ Setelah aplikasi server berjalan dengan baik, selanjutnya dapat dilakukan proses
 
 ![Gambar-5.4]()
 > Gambar-5.4 Halaman web aplikasi ` phpMyAdmin `
+
+* Selanjutnya adalah pembuatan ` DATABASE `: dapat dilakukan dengan cara klik menu ` Databases ` (lokasi di bar menu atas), setalah itu di bawah label ` Create databse ` masukan nama database (sebaiknya nama database TANPA SPASI)  dan klik button ` Create `.  Jika berhasil maka nama database yang baru akan di tampilkan pada kolo sebelah kiri dalam halaman web. Dalam contoh ini dibuat database dengan nama ` login `, seperti ditampilkan pada gambar di bawah
+
+![Gambar-5.5]() 
+> Gambar-5.5 Membuat database ` Login `
+
+* Berikutnya adlah membuat tabel dalam database ` Login `, klik database ` Login ` untuk memilih database yang akan kita gunakan untuk membuat sebuah tabel, sehingga tampak seperti gambar di bawah, selanjutnya masukan nama tabel ` users ` dan jumlah kolom (Number of columns) sama dengan 3 (id, username, password) selanjutnya klik button ` Go `
+
+![Gambar-5.6]()
+> Gambar-5.6 Membuat tabel ` users ` dalam database ` Login `
+
+* Selanjutnya buatlah nama-nama kolom dan tipe datanya dalam tabel (id (integer, a_i), useranme (varchar 40), password (varchar 132), seperti pada gamabr di bawah dan klik button ` Save `.
+
+![Gambar-5.7]() 
+> Gambar-5.7 Membuat kolom tabel 
+
+* Jika pembuatan kolom pada tabel ` Login ` berhasil maka akan di tampilkan nama tabel di sebelah kiri halaman web, klik nama tabel tersebut ` users ` maka akan di tampilkan nama-nama kolom di sebelah kanan nama tabel, seperti pada gamabr di bawah. 
+
+![Gambar-5.8]()
+> Gambar-5.8 Tampilan nama kolom pada tabel ` users ` dalam database ` Login `   
+
+
+
