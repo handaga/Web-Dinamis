@@ -29,13 +29,14 @@ Setelah aplikasi server berjalan dengan baik, selanjutnya dapat dilakukan proses
 
 * Selanjutnya adalah pembuatan ` DATABASE `: dapat dilakukan dengan cara klik menu ` Databases ` (lokasi di bar menu atas), setalah itu di bawah label ` Create databse ` masukan nama database (sebaiknya nama database TANPA SPASI)  dan klik button ` Create `.  Jika berhasil maka nama database yang baru akan di tampilkan pada kolo sebelah kiri dalam halaman web. Dalam contoh ini dibuat database dengan nama ` login `, seperti ditampilkan pada gambar di bawah
 
-![Gambar-5.5](https://cdn.rawgit.com/handaga/Web-Dinamis/master/images/phpMyAdmin-02-Login.jpeg) 
+![Gambar-5.5a](https://cdn.rawgit.com/handaga/Web-Dinamis/master/images/phpMyAdmin-02-Login.jpeg) 
+![Gambar-5.5b](https://cdn.rawgit.com/handaga/Web-Dinamis/master/images/phpMyAdmin-03.jpeg)
 > Gambar-5.5 Membuat database ` Login `
 
 * Berikutnya adlah membuat tabel dalam database ` Login `, klik database ` Login ` untuk memilih database yang akan kita gunakan untuk membuat sebuah tabel, sehingga tampak seperti gambar di bawah, selanjutnya masukan nama tabel ` users ` dan jumlah kolom (Number of columns) sama dengan 3 (id, username, password) selanjutnya klik button ` Go `
 
-![Gambar-5.6a](https://cdn.rawgit.com/handaga/Web-Dinamis/master/images/phpMyAdmin-03.jpeg)
-![Gambar-5.6b](https://cdn.rawgit.com/handaga/Web-Dinamis/master/images/phpMyAdmin-04.jpeg)
+
+![Gambar-5.6](https://cdn.rawgit.com/handaga/Web-Dinamis/master/images/phpMyAdmin-04.jpeg)
 > Gambar-5.6 Membuat tabel ` users ` dalam database ` Login `
 
 * Selanjutnya buatlah nama-nama kolom dan tipe datanya dalam tabel (id (integer, a_i), useranme (varchar 40), password (varchar 132), seperti pada gamabr di bawah dan klik button ` Save `.
