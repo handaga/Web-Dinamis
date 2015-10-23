@@ -1,8 +1,8 @@
+<?php 
 
-
-<h1>Welcome <?php echo $_COOKIE['USERNAME']; ?> </h1>
-<p>
-<a href="logout.php">LOGOUT</a>
-
-
-
+  //delete cookie
+	setcookie('USERNAME','',time() - 3600, "/" );
+	
+	//open login page
+  include "cookie_login.php";
+?>
