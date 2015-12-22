@@ -3,6 +3,15 @@
 **AJAX** : Asynchronous Javascript and XML
 **Fungsi**: Untuk mengupdate sebagian halaman web tanpa me-REFRESH keseluruhan halaman.
 
+## Cara kerja Ajax:
+
+1. Browser membuat sebuah obyek yaitu  XMLHttpRequest
+2. Mengirim obyek tersebut ke WEB SERVER.
+3. Web Server: memproses HttpRequest, membuat jawaban permintaan dari browser.
+4. Mengirim jawaban httprequest ke browser
+5. Browser akan memproses jawaban dari server dengan menggunakan Javascript.
+6. Mengupdate content halaman web.
+
 ## Contoh:
 
        <!DOCTYPE html>
