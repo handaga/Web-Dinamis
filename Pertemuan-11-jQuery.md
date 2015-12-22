@@ -1,26 +1,69 @@
-## What is jQuery?
+## Apa itu jQuery?
 
-jQuery is a fast and concise JavaScript Library created by John Resig in 2006 with a nice motto − Write less, do more.
-jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
-jQuery is a JavaScript toolkit designed to simplify various tasks by writing less code. Here is the list of important core features supported by jQuery −
+jQuery adalah pustaka (library) fungsi dalam bahasa javascript, yang dapat bekerja dengan cepat, ringkas dan lengkap, dibuat oleh John Resig (2006). moto jQuery -   sedikit kode banyak kerja.
 
-* **DOM manipulation** − The jQuery made it easy to select DOM elements, traverse them and modifying their content by using cross-browser open source selector engine called Sizzle.
-* **Event handling** − The jQuery offers an elegant way to capture a wide variety of events, such as a user clicking on a link, without the need to clutter the HTML code itself with event handlers.
-* **AJAX Support** − The jQuery helps you a lot to develop a responsive and feature-rich site using AJAX technology.
-* **Animations** − The jQuery comes with plenty of built-in animation effects which you can use in your websites.
-* **Lightweight** − The jQuery is very lightweight library - about 19KB in size ( Minified and gzipped ).
-* **Cross Browser Support** − The jQuery has cross-browser support, and works well in IE 6.0+, FF 2.0+, Safari 3.0+, Chrome and Opera 9.0+
-* **Latest Technology** − The jQuery supports CSS3 selectors and basic XPath syntax.
+jQuery dapat digunakan untuk menyederhanakan proses pengolahan dokumen HTML meliputi, traversing (mengolah tag yang sejenis dalam jumlah banyak), Event handling (onClick dll), membuat animasi, dan implementasi Ajax, untuk mempercepat proses pengembangan aplikasi web.
 
-## How to use jQuery?
+Spesifikasi penting jQuery meliputi hal-hal sebagai berikut:
+* **Memanipulasi DOM** (Document Object Model/tag2 dalam html), termasuk memodifikasi isi dokumen dalam DOM, modifikasi attribut.
+* **Even Handling**: mengendalikan hampir sebagaian bersar event dalam browser, contoh onClick dll, secara mudah.
+* **Ajax** : dapat digunakan untuk mengimplementasikan AJAX lebih sederhana.
+* **Dapat digunakan untuk membuat ANIMASI** dengan berbagai jenis effect (Perubahan ketika oject muncul di layar) yang sudah tersedia dalam jQuery.
+* **Lightweight** : ukuran file relatif kecil sehingga tidak membebani web.
+* **Dapat digunakan di berbagai jenis browser**.
+* **Menggunakan teknologi paling uptodate (CSS3)**.
+	
+Bagaimana cara menggunanakan jQuery.
 
-There are two ways to use jQuery.
+* **Di-install dalam komputer lokal**  (lebih menguntungkan ketika aplikasi web masih dalam proses pegembangan). jQuery di download dari website jQuery (jQuery.com), kemudian di letakan dalam folder dimana aplikasi web berada. Terdapat dua versi  jQ 1.x  & jQ 2.x (versi 2.x tidak dapat digunakan dalam browser IE-6, 7, atau 8). Disediakan dalam dua bentuk  (COMPRESSED : minimisasi jq.min.js) dan UNCOMPRESSED (kode dapat dibaca oleh programmer).
+	
+contoh:
 
-* **Local Installation** − You can download jQuery library on your local machine and include it in your HTML code.
-* **CDN Based Version** − You can include jQuery library into your HTML code directly from Content Delivery Network (CDN).
+      <head>
+         <script src="jquery-1.11.3.min.js"> </script>
+      </head>
 
-Local Installation
+* **Mengambil dari link tak-berbayar (CDN: Content Delivery Network)**, lebih menguntungkan ketika aplikasi web sudah di publis (internet online).
 
-    Go to the [jquery website](https://jquery.com/download/) to download the latest version available.
-    Now put downloaded jquery-2.1.3.min.js file in a directory of your website, e.g. /jquery.
+Contoh:
+
+      <head>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      </head> 
+	
+	
+## Bentuk perintah dalam jQuery:
+
+> # $(selector).action()
+
+selector serupa dengan selector yang terdapat pada CSS. 
+Format selector :
+
+> ## $("p") : built in tag
+> ## $("#nama-id") : id 
+> ## $(".nama-class") : class
+
+Contoh:
+
+      $("p").hide() - menyembunyikan semua element <p>.
+      $(".test").hide() - menyembunyikan semua element dengan class="test".
+      $("#test").hide() - menyembunyikan semua element dengan  id="test".
+      $("p .myclass").show();
+
+
+ACTION() adalah satu proses yang akan diterapkan pada selector, daftar lengkap dapat dilihat dalam referensi jQuery .
+
+Selanjutnya silahkan belajar jQuery dari link berikut:
+
+> ## [jQuery-w3School](http://www.w3schools.com/jquery/jquery_intro.asp)
+> ## [jQuery-Tutorialspoint](http://www.tutorialspoint.com/jquery/index.htm)
+
+Beberapa link terkait jQuery:
+
+> ### [jqueryUI](https://jqueryui.com/)
+> ### [jquery Mobile](https://jquerymobile.com/)
+> ### [jQuery plugin](https://plugins.jquery.com/)
+> ### [jqWidgets](www.jqwidgets.com) 
+
+
 
